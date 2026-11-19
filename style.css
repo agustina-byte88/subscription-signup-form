@@ -1,0 +1,134 @@
+/* General page settings */
+* {
+    margin: 0; /* Removes default margins */
+    padding: 0; /* Removes default padding */
+    box-sizing: border-box; /* Includes padding in element dimensions */
+}
+
+/* Body styling */
+body {
+    background-color: #f1f1f1; /* Sets a light gray background */
+    font-family: Arial, sans-serif; /* Uses a clean and readable font */
+    min-height: 100vh; /* Makes the body fill the screen height */
+    display: flex; /* Enables flexible positioning */
+    justify-content: center; /* Centers the container horizontally */
+    align-items: center; /* Centers the container vertically */
+    padding: 20px; /* Adds space around the container */
+}
+
+/* Main subscription container */
+.container {
+    background-color: #ffffff; /* Creates a white container */
+    width: 100%; /* Uses the available width */
+    max-width: 950px; /* Limits the container width */
+    padding: 50px 35px 35px; /* Adds space inside the container */
+    border-radius: 18px; /* Rounds the container corners */
+    text-align: center; /* Centers the heading and image */
+    box-shadow: 0 3px 20px rgba(0, 0, 0, 0.08); /* Adds a subtle shadow */
+}
+
+/* Dog image container */
+.dog-image {
+    width: 165px; /* Sets the circular image width */
+    height: 165px; /* Sets the circular image height */
+    background-color: #63d9ed; /* Sets a bright blue background */
+    border: 5px solid #471869; /* Adds a purple circular border */
+    border-radius: 50%; /* Makes the container circular */
+    margin: 0 auto 35px; /* Centers the image and adds bottom spacing */
+    display: flex; /* Enables image alignment */
+    justify-content: center; /* Centers the image horizontally */
+    align-items: center; /* Centers the image vertically */
+}
+
+/* Dog illustration */
+.dog-image img {
+    width: 140px; /* Sets the illustration width */
+    height: 140px; /* Sets the illustration height */
+    object-fit: contain; /* Keeps the image proportions */
+}
+
+/* Main heading */
+h1 {
+    color: #471869; /* Sets the purple heading color */
+    font-size: 54px; /* Makes the heading large */
+    font-weight: bold; /* Makes the heading bold */
+    margin-bottom: 35px; /* Adds space below the heading */
+}
+
+/* Description paragraph */
+p {
+    color: #111111; /* Sets a dark text color */
+    font-size: 26px; /* Sets the paragraph text size */
+    line-height: 1.4; /* Adds space between text lines */
+    text-align: left; /* Aligns the paragraph to the left */
+    margin-bottom: 55px; /* Adds space before the form */
+}
+
+/* Registration form */
+form {
+    width: 100%; /* Makes the form fill the container width */
+}
+
+/* Input fields */
+input {
+    width: 100%; /* Makes each input fill the form width */
+    padding: 17px; /* Adds space inside the input fields */
+    border: 2px solid #dddddd; /* Adds a light gray border */
+    border-radius: 10px; /* Rounds the input corners */
+    font-size: 25px; /* Sets the input text size */
+    margin-bottom: 15px; /* Adds space between input fields */
+}
+
+/* Submit button */
+button {
+    width: 100%; /* Makes the button fill the form width */
+    padding: 17px; /* Adds space inside the button */
+    background-color: #471869; /* Sets the purple button color */
+    color: #ffffff; /* Makes the button text white */
+    border: none; /* Removes the default border */
+    border-radius: 9px; /* Rounds the button corners */
+    font-size: 25px; /* Sets the button text size */
+    cursor: pointer; /* Changes the cursor when hovering */
+    margin-top: 15px; /* Adds space above the button */
+}
+
+/* Button hover effect */
+button:hover {
+    background-color: #35104f; /* Darkens the button when hovered */
+}
+
+/* Responsive design for smaller screens */
+@media (max-width: 600px) {
+
+    .container {
+        padding: 30px 20px; /* Reduces container spacing */
+    }
+
+    .dog-image {
+        width: 125px; /* Reduces image width */
+        height: 125px; /* Reduces image height */
+    }
+
+    .dog-image img {
+        width: 105px; /* Reduces illustration width */
+        height: 105px; /* Reduces illustration height */
+    }
+
+    h1 {
+        font-size: 32px; /* Reduces heading size */
+        margin-bottom: 25px; /* Reduces bottom spacing */
+    }
+
+    p {
+        font-size: 17px; /* Reduces paragraph size */
+        margin-bottom: 30px; /* Reduces bottom spacing */
+    }
+
+    input {
+        font-size: 17px; /* Reduces input text size */
+    }
+
+    button {
+        font-size: 18px; /* Reduces button text size */
+    }
+}
